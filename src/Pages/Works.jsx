@@ -156,9 +156,9 @@ export default function Works() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                             {[
-                                { number: '100+', label: 'Projects Completed' },
-                                { number: '50+', label: 'Happy Clients' },
-                                { number: '15+', label: 'Industries Served' },
+                                { number: '50+', label: 'Projects Completed' },
+                                { number: '20+', label: 'Happy Clients' },
+                                { number: '5+', label: 'Industries Served' },
                                 { number: '98%', label: 'Success Rate' }
                             ].map((stat, index) => (
                                 <div key={index}>

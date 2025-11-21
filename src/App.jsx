@@ -12,12 +12,14 @@ import FutureOfAI from './Pages/blog/FutureOfAI';
 import MachineLearningMarketing from './Pages/blog/MachineLearningMarketing';
 import WebDevelopmentPractices from './Pages/blog/WebDevelopmentPractices';
 import AIChatbots from './Pages/blog/AIChatbots';
+import ChatbotWidget from './components/ChatbotWidget';
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
       <ScrollToTop />
+      <ChatbotWidget />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
