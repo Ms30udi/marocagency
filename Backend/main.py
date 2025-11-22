@@ -16,7 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-API_KEY = "AIzaSyDF61qgFSBEMGRtIfyDo597ulVC9DH2LVs"
+API_KEY = "AIzaSyCsJOfZmUp31qOFD6ifeOXGl0Onf9kbHiU"
 MODEL = "models/gemini-2.5-flash"
 
 def trim_response(text, num_sentences=3):
