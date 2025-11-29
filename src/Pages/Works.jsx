@@ -134,7 +134,7 @@ export default function Works() {
                         alt="Our Portfolio"
                         className="absolute inset-0 w-full h-full object-cover opacity-60"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black via-black/50 to-transparent" />
 
                     <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-end pb-16 pt-24">
                         <div className="mb-4">
@@ -152,7 +152,7 @@ export default function Works() {
                 </section>
 
                 {/* Stats Section */}
-                <section className="py-16 bg-gradient-to-br from-[#092f73] to-[#0a3a8f]">
+                <section className="py-16 bg-linear-to-br from-[#092f73] to-[#0a3a8f]">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                             {[
@@ -217,7 +217,7 @@ export default function Works() {
                                                     alt={project.title}
                                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                                                 />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                                     <div className="absolute bottom-4 left-4 right-4">
                                                         <span className="px-3 py-1 bg-[#092f73] text-white text-xs font-bold rounded-full">
                                                             {categories.find(c => c.id === project.category)?.name}
@@ -296,7 +296,7 @@ export default function Works() {
                 <section className="py-32 bg-white"> {/* Changed from py-20 to py-32 */}
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="relative overflow-hidden rounded-3xl">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#092f73] via-blue-600 to-cyan-600">
+                            <div className="absolute inset-0 bg-linear-to-br from-[#092f73] via-blue-600 to-cyan-600">
                                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent_50%)]"></div>
                             </div>
 
@@ -333,15 +333,15 @@ export default function Works() {
                                 {/* Bottom Stats - FIX TEXT OVERFLOW */}
                                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:gap-8 text-white text-sm px-4">
                                     <div className="flex items-center">
-                                        <CheckCircle2 className="w-5 h-5 mr-2 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 mr-2 shrink-0" />
                                         <span className="whitespace-nowrap">Free Consultation</span>
                                     </div>
                                     <div className="flex items-center">
-                                        <CheckCircle2 className="w-5 h-5 mr-2 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 mr-2 shrink-0" />
                                         <span className="whitespace-nowrap">Expert Team</span>
                                     </div>
                                     <div className="flex items-center">
-                                        <CheckCircle2 className="w-5 h-5 mr-2 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 mr-2 shrink-0" />
                                         <span className="whitespace-nowrap">Proven Results</span>
                                     </div>
                                 </div>

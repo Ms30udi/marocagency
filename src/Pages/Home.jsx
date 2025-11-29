@@ -70,14 +70,14 @@ export default function Home() {
       {/* Creative CTA Section */}
       <section className="relative py-32 overflow-hidden">
         {/* Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-[#092f73] to-black">
+        <div className="absolute inset-0 bg-linear-to-br from-black via-[#092f73] to-black">
           <div className="absolute top-0 left-0 w-96 h-96 bg-[#092f73] rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
         </div>
 
         {/* Grid Pattern Overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-size[4rem_4rem]"></div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
@@ -94,7 +94,7 @@ export default function Home() {
             <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight">
               Ready to Transform
               <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-white to-blue-400 animate-gradient">
+              <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-white to-blue-400 animate-gradient">
                 Your Business?
               </span>
             </h2>

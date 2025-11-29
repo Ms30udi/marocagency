@@ -63,7 +63,7 @@ export default function ChatbotWidget() {
 
             {/* Floating Button - Responsive placement */}
             {!open && (
-                <div className="fixed bottom-8 right-4 md:bottom-6 md:right-6 z-[9999] flex flex-col items-end gap-2 animate-float">
+                <div className="fixed bottom-8 right-4 md:bottom-6 md:right-6 z-9999 flex flex-col items-end gap-2 animate-float">
                     {/* Tooltip message */}
                     <div className="hidden sm:block bg-white text-gray-800 px-4 py-2 rounded-lg shadow-lg text-sm font-medium whitespace-nowrap">
                         How can I help you?
@@ -82,7 +82,7 @@ export default function ChatbotWidget() {
             {open && (
                 <div className={
                     // Mobile: full width, bottom right. Desktop: right with margin.
-                    "fixed bottom-0 right-0 z-[9999] w-full max-w-full h-[70vh] sm:bottom-6 sm:right-6 sm:w-[98vw] sm:max-w-md md:max-w-lg sm:h-[500px] rounded-t-xl sm:rounded-lg bg-white shadow-2xl flex flex-col overflow-hidden"
+                    "fixed bottom-0 right-0 z-9999 w-full max-w-full h-[70vh] sm:bottom-6 sm:right-6 sm:w-[98vw] sm:max-w-md md:max-w-lg sm:h-[500px] rounded-t-xl sm:rounded-lg bg-white shadow-2xl flex flex-col overflow-hidden"
                 }>
                     {/* Header */}
                     <div className="bg-[#092f73] text-white px-4 py-3 flex items-center justify-between">
@@ -135,7 +135,7 @@ export default function ChatbotWidget() {
                     </div>
 
                     {/* Input */}
-                    <div className="p-2 sm:p-4 border-t border-gray-200 flex items-center gap-2 bg-white flex-shrink-0">
+                    <div className="p-2 sm:p-4 border-t border-gray-200 flex items-center gap-2 bg-white shrink-0">
                         <input
                             type="text"
                             value={inputValue}
@@ -148,7 +148,7 @@ export default function ChatbotWidget() {
                         <button
                             onClick={handleSend}
                             disabled={isLoading}
-                            className="text-[#092f73] hover:text-blue-800 disabled:opacity-50 flex-shrink-0 p-2"
+                            className="text-[#092f73] hover:text-blue-800 disabled:opacity-50 shrink-0 p-2"
                             aria-label="Send message"
                             style={{ fontSize: '1.2rem' }}
                         >

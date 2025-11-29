@@ -5,7 +5,7 @@ const Spline = lazy(() => import('@splinetool/react-spline'));
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[118vh] bg-gradient-to-br from-black via-[#092f73] to-black overflow-hidden">
+    <section className="relative w-full h-[118vh] bg-linear-to-br from-black via-[#092f73] to-black overflow-hidden">
       {/* Spotlight Effect */}
       <div className="absolute inset-0 z-0">
         <div className="absolute -top-40 left-0 md:left-60 md:-top-20 w-[500px] h-[500px] opacity-30">
@@ -16,7 +16,7 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto h-full flex flex-col lg:flex-row items-center px-4 sm:px-6 lg:px-8">
         {/* Left Content */}
         <div className="flex-1 text-center lg:text-left space-y-6 py-12 lg:py-0">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-200 to-[#092f73]">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white via-blue-200 to-[#092f73]">
             Maroc Agency
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto lg:mx-0 font-semibold">
@@ -61,7 +61,7 @@ export default function HeroSection() {
       </div>
 
       {/* Gradient Overlay at Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white dark:from-gray-900 to-transparent z-20"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-white dark:from-gray-900 to-transparent z-20"></div>
     </section>
   );
 }
