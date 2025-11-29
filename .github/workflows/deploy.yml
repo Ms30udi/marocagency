@@ -13,8 +13,8 @@ jobs:
           username: root
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
-            cd /var/www/marocagency/marocagency
+            cd ~/website/marocagency
             git pull origin main
-            npm install
-            npm run build
-            sudo systemctl reload nginx
+            docker compose down
+            docker compose build
+            docker compose up -d
